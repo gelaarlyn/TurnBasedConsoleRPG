@@ -5,6 +5,7 @@
 #include "Mage.h"
 #include <iostream>
 #include <string>
+#include "Vamphire.h"
 
 int main()
 {
@@ -18,9 +19,9 @@ int main()
     //StoneGolem stonegolem{ "Stone Golem", 200, 100 };
     //Battle     battle{ player, stonegolem };
     //Mage mage{ "Mage" };
-    Slime slime{ "Slime", 150, 50 };
+    Vamphire Vamphire{ "Vamphire", 100, 40 };
     //Battle     battle{ mage, slime };
-    Battle     battle{ player, slime };
+    Battle     battle{ player, Vamphire };
     battle.run();
 
     return 0;
