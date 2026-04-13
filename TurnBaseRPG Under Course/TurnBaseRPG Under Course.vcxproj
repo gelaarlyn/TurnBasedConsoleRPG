@@ -18,36 +18,11 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="ActionResult.h" />
-    <ClInclude Include="Battle.h" />
-    <ClInclude Include="Character.h" />
-    <ClInclude Include="doctest.h" />
-    <ClInclude Include="drop.h" />
-    <ClInclude Include="Enemy.h" />
-    <ClInclude Include="Mage.h" />
-    <ClInclude Include="Player.h" />
-    <ClInclude Include="Slime.h" />
-    <ClInclude Include="StoneGolem.h" />
-    <ClInclude Include="Vamphire.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="testenemy.cpp" />
-    <ClCompile Include="Vamphire.cpp" />
-    <ClCompile Include="Battle.cpp" />
-    <ClCompile Include="Character.cpp" />
-    <ClCompile Include="Enemy.cpp" />
-    <ClCompile Include="Mage.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="Player.cpp" />
-    <ClCompile Include="Slime.cpp" />
-    <ClCompile Include="StoneGolem.cpp" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>17.0</VCProjectVersion>
+    <VCProjectVersion>18.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{28621021-79aa-4491-8b03-415586d58aa1}</ProjectGuid>
-    <RootNamespace>TurnBasedRPG</RootNamespace>
+    <ProjectGuid>{dceef387-4c78-4d0a-8314-77d6dc202328}</ProjectGuid>
+    <RootNamespace>TurnBaseRPGUnderCourse</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -101,6 +76,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -115,6 +91,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -123,11 +100,10 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <WarningLevel>Level4</WarningLevel>
+      <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <TreatWarningAsError>true</TreatWarningAsError>
       <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
@@ -137,13 +113,12 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <WarningLevel>Level4</WarningLevel>
+      <WarningLevel>Level3</WarningLevel>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <TreatWarningAsError>true</TreatWarningAsError>
       <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
@@ -151,6 +126,9 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="TurnBaseRPG Under Course.cpp" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

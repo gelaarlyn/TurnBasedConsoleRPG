@@ -22,7 +22,7 @@ public:
     // Returns the HP damage dealt to the player this turn.     
     // // Derived classes override this to implement specific attack patterns.
     virtual ActionResult performAttack();
-
+  
 private:
     int  m_toughness{};
     int  m_maxToughness{};

@@ -39,6 +39,15 @@
     <ClInclude Include="Mage.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Vamphire.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="doctest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="drop.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Character.cpp">
@@ -63,6 +72,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Mage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Vamphire.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="testenemy.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

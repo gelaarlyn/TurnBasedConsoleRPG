@@ -1,0 +1,9 @@
+{
+  "solution": {
+    "path": "TurnBasedRPG.sln",
+    "projects": [
+      "TurnBaseRPG Under Course\\TurnBaseRPG Under Course.vcxproj",
+      "TurnBasedRPG\\TurnBasedRPG.vcxproj"
+    ]
+  }
+}
